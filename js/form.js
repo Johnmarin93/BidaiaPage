@@ -1,40 +1,26 @@
-document.getElementById("contactForm").addEventListener("submit", function (e) {
-  e.preventDefault();
+document.getElementById("contactForm").addEventListener("submit", async (e) => {
+  e.preventDefault(); // Evita recargar la página
 
-  const form = e.target;
-  const datos = new FormData(form);
+  const formData = new FormData(e.target);
+  const modalTexto = document.getElementById("modalTexto");
+  const modal = new bootstrap.Modal(document.getElementById("modalMensaje"));
 
-  fetch("../enviar.php", {
-    method: "POST",
-    body: datos,
-  })
-    .then((response) => response.text())
-    .then((data) => {
-      const popup = document.getElementById("popup");
-      const mensaje = document.getElementById("mensaje");
-
-      if (data.includes("✅")) {
-        mensaje.innerHTML =
-          "<span style='color:green;'>✅ Mensaje enviado correctamente</span>";
-      } else {
-        mensaje.innerHTML =
-          "<span style='color:red;'>❌ Error al enviar el mensaje</span>";
-      }
-
-      popup.style.display = "block"; // Muestra la ventana
-      form.reset();
-    })
-    .catch(() => {
-      const popup = document.getElementById("popup");
-      const mensaje = document.getElementById("mensaje");
-
-      mensaje.innerHTML =
-        "<span style='color:red;'>❌ Error de conexión. Intenta más tarde.</span>";
-      popup.style.display = "block";
+  try {
+    const respuesta = await fetch("enviar.php", {
+      method: "POST",
+      body: formData,
     });
-});
+    const texto = await respuesta.text();
 
-// Cerrar la ventana
-document.getElementById("cerrar").addEventListener("click", () => {
-  document.getElementById("popup").style.display = "none";
+    if (texto.includes("✅")) {
+      modalTexto.innerHTML = `<p class="text-success fs-5 mb-0">✅ Mensaje enviado correctamente</p>`;
+    } else {
+      modalTexto.innerHTML = `<p class="text-danger fs-5 mb-0">❌ Error al enviar el mensaje</p>`;
+    }
+  } catch (error) {
+    modalTexto.innerHTML = `<p class="text-danger fs-5 mb-0">⚠️ Error de conexión con el servidor</p>`;
+  }
+
+  modal.show();
+  e.target.reset(); // limpia el formulario
 });

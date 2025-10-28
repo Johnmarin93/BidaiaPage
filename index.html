@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bidaia</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="icon" href="./imagenes/logo.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-principal">
+      <div class="container">
+        <!-- Logo -->
+        <a href="" onclick="cargar('inicio.html')">
+          <img src="/imagenes/logoS.png" alt="Logo" class="logo" />
+        </a>
+
+        <!-- Botón hamburguesa -->
+        <button
+          class="navbar-toggler m-3"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Enlaces -->
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-2">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="javascript:void(0)"
+                onclick="cargar('page/inicio.html')"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="javascript:void(0)"
+                onclick="cargar('paquetes/paquetes.html')"
+                >Paquetes</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="javascript:void(0)"
+                onclick="cargar('destinos/destinos.html')"
+                >Destinos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                onclick="cargar('page/nosotros.html')"
+                >H</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://reservas.bidaia.com.co"
+                >Reserva ahora</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Fin Navbar -->
+
+    <!--Contenido -->
+    <div id="contenido">Cargando página...</div>
+    <!--Contenido -->
+
+    <div class="container my-5 text-center" id="comentarios-clientes">
+      <h2 class="text-center mb-4" style="font-weight: 700">
+        Experiencias de viajes
+      </h2>
+      <!-- Elfsight Google Reviews | Untitled Google Reviews -->
+      <script src="https://elfsightcdn.com/platform.js" async></script>
+      <div
+        class="elfsight-app-2bfaaa75-788f-4408-85a3-2e6fae2ebc40"
+        data-elfsight-app-lazy
+      ></div>
+    </div>
+
+    <!-- Footer Start -->
+    <footer>
+      <div
+        class="container-fluid text-white-50 py-5 px-sm-3 px-lg-5 footer"
+        id="contact"
+      >
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <p style="text-align: justify; color: #e7f9fc">
+              En Bidaia somos personas responsables, con actitud de servicio y
+              apasionados por lo que hacemos. Trabajamos día a día con respeto,
+              disciplina y lealtad por nuestra empresa. Brindamos a nuestros
+              clientes excelente comunicación, empatía y amabilidad.
+            </p>
+            <h6
+              class="text-white text-uppercase mt-4 mb-3"
+              style="letter-spacing: 5px"
+            >
+              Síguenos en:
+            </h6>
+
+            <!-- Redes sociales -->
+            <div class="d-flex gap-3 justify-content-center">
+              <a
+                href="https://www.instagram.com/bidaia_co/"
+                target="_blank"
+                class="icono-red"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="https://www.tiktok.com/@bidaia.agencia.de"
+                target="_blank"
+                class="icono-red"
+              >
+                <i class="fab fa-tiktok"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-1 col-md-6"></div>
+          <div class="col-lg-4 col-md-6">
+            <h6
+              class="text-white text-uppercase mb-4"
+              style="letter-spacing: 5px"
+            >
+              Contáctenos
+            </h6>
+            <p style="color: #e7f9fc; text-align: start">
+              <i class="fa fa-map-marker-alt mr-2 text-white"></i> Cañaveral 2
+              local 17, Pereira, Risaralda, Colombia
+            </p>
+            <p style="color: #e7f9fc; text-align: start">
+              <i class="fa fa-phone-alt mr-2 text-white"></i> +57 3127096446
+            </p>
+            <p style="color: #e7f9fc; text-align: start">
+              <i class="fa fa-envelope mr-2 text-white"></i>
+              bidaiaagenciadeviajes@gmail.com
+            </p>
+            <p style="color: #e7f9fc; text-align: start">
+              <i class="fa fa-file mr-2 text-white"></i>
+              RTN: 243706
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6">
+            <h6
+              class="text-white text-uppercase mb-4"
+              style="letter-spacing: 3px"
+            >
+              Medios de Pago
+            </h6>
+            <img
+              src="./imagenes/medios/Bancolombia.png"
+              style="width: 40px; height: 40px"
+            />
+            <img
+              src="./imagenes/medios/Davivienda.png"
+              style="width: 40px; height: 40px"
+            />
+            <img
+              src="./imagenes/medios/Mastercard.png"
+              style="width: 40px; height: 40px"
+            />
+            <img
+              src="./imagenes/medios/visa.png"
+              style="width: 40px; height: 40px"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid bg-dark text-white-50 py-3 px-sm-3 px-md-5">
+        <div class="row">
+          <div class="col-lg-4 text-center text-md-start mb-3 mb-md-0">
+            <p style="color: #fff; font-size: 14px">
+              &copy; 2024 <strong>Bidaia</strong>. Todos los derechos
+              reservados.
+            </p>
+          </div>
+          <div
+            class="col-lg-4 text-center text-md-center mb-3 mb-md-0"
+            style="font-size: 14px"
+          >
+            <a
+              href="javascript:void(0)"
+              onclick="cargar('tratamiento.html')"
+              style="color: #fff; text-decoration: none"
+              >Tratamiento de Datos</a
+            >
+            |
+            <a
+              href="javascript:void(0)"
+              onclick="cargar('politicas.html')"
+              style="color: #fff; text-decoration: none"
+              >Politica de privacidad</a
+            >
+            |
+            <a
+              href="javascript:void(0)"
+              onclick="cargar('terminos.html')"
+              style="color: #fff; text-decoration: none"
+              >Terminos y condiciones</a
+            >
+          </div>
+          <div
+            class="col-lg-4 text-center text-md-end mb-3 mb-md-0"
+            style="font-size: 14px"
+          >
+            Diseñado por
+            <a href="#" style="color: #fff; text-decoration: none"
+              >John Marin</a
+            >
+          </div>
+          <a
+            href="https://api.whatsapp.com/send?phone=573127096446"
+            class="float-wa"
+            target="_blank"
+          >
+            <i class="bi bi-whatsapp" style="margin-top: 16px"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    <!-- SCRIPTS -->
+    <script src="/js/main.js"></script>
+    <script src="/js/recaptcha.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/navbar.js"></script>
+    <script src="/js/contenido.js"></script>
+  </body>
+</html>

@@ -325,7 +325,8 @@ video {
 }
 
 #form input:focus,
-#form textarea:focus {
+#form textarea:focus,
+#form select:focus {
   border-color: #00b5e2; /* color del borde cuando se hace clic */
   box-shadow: 0 0 5px #00b5e2; /* sombra alrededor */
   outline: none; /* quita el borde azul predeterminado */

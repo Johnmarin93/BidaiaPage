@@ -445,7 +445,7 @@ video {
   width: fit-content;
 }
 
-/* Lado izquierdo (color corporativo naranja) */
+/* Lado izquierdo */
 .card-precio .dias {
   background-color: #f2910f;
   color: #fff;
@@ -454,26 +454,44 @@ video {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 1.5rem;
+  padding: 0 2rem;
   white-space: nowrap;
 }
 
-/* Lado derecho (blanco con texto azul) */
+/* Lado derecho */
 .card-precio .precio {
   background-color: #fff;
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
 }
 
+/* Texto "Desde" */
 .card-precio small {
   color: #000000;
   font-size: 0.85rem;
 }
 
+/* Precio */
 .card-precio span {
   font-size: 1.25rem;
   font-weight: 700;
-  color: #01b6e3; /* azul corporativo */
+  color: #01b6e3;
+}
+
+/* Contenedor del precio y USD */
+.card-precio .valor {
+  display: flex;
+  align-items: baseline; /* Alinea el texto del USD con la parte baja del número */
+  justify-content: center;
+  gap: 0.25rem; /* Pequeño espacio entre el precio y USD */
+}
+
+/* USD más pequeño y oscuro */
+.card-precio .valor small {
+  font-size: 0.75rem;
+  color: #000;
+  font-weight: 700;
 }

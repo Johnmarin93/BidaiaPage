@@ -1,38 +1,256 @@
 <!-- BANNER PRINCIPAL -->
-<header
-  class="bg-dark text-white text-center position-relative"
-  style="height: 100vh"
->
-  <video
-    autoplay
-    muted
-    loop
-    playsinline
-    class="w-100 h-100 object-fit-cover position-absolute top-0 start-0"
-    style="z-index: 1; opacity: 0.7"
-  >
-    <source src="/videos/paquetes.mp4" type="video/mp4" />
-    Tu navegador no soporta el video.
-  </video>
-  <div
-    class="container h-100 d-flex flex-column justify-content-center align-items-center position-relative"
-    style="z-index: 2"
-  >
-    <h1 class="display-4">Bienvenido a Mi Web</h1>
-    <p class="lead">Explora nuestros servicios y reserva tu experiencia</p>
-    <a href="#" class="btn btn-primary btn-lg mt-3">Reserva</a>
+<header class="position-relative overflow-hidden">
+  <div class="ratio ratio-16x9">
+    <video
+      autoplay
+      muted
+      loop
+      playsinline
+      style="object-fit: cover; width: 100%; height: 100%"
+    >
+      <source src="./videos/ven.mp4" type="video/mp4" />
+      Tu navegador no soporta el video.
+    </video>
   </div>
 </header>
 
-<!-- SECCIÓN DE DESCRIPCIÓN -->
+<section class="py-5 bg-white">
+  <div class="container">
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-3 col-sm-1 text-center">
+        <img
+          src="/imagenes/iconos/ciudad.png"
+          alt="Playa"
+          class="img-fluid rounded-4 shadow-sm mb-3 icons"
+        />
+      </div>
+      <div class="col-md-3 col-sm-1 text-center">
+        <img
+          src="/imagenes/iconos/torre.png"
+          alt="Playa"
+          class="img-fluid rounded-4 shadow-sm mb-3 icons"
+        />
+      </div>
+      <div class="col-md-3 col-sm-1 text-center">
+        <img
+          src="/imagenes/iconos/rio.png"
+          alt="Playa"
+          class="img-fluid rounded-4 shadow-sm mb-3 icons"
+        />
+      </div>
+      <div class="col-md-3 col-sm-1 text-center">
+        <img
+          src="/imagenes/iconos/asia_n.png"
+          alt="Playa"
+          class="img-fluid rounded-4 shadow-sm mb-3 icons"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="py-5">
-  <div class="container text-center">
-    <h2 class="mb-4">¿Quiénes somos?</h2>
-    <p class="lead mx-auto" style="max-width: 800px">
-      Somos una empresa comprometida con ofrecer experiencias únicas a nuestros
-      clientes. Nuestro objetivo es brindarte un servicio de calidad,
-      personalizado y que supere tus expectativas. Contamos con un equipo
-      profesional que se encargará de cada detalle.
-    </p>
+  <div class="container">
+    <div class="row g-4 align-items-center">
+      <div class="col-md-8">
+        <div class="container">
+          <h1 class="text-center mb-4" style="font-weight: 800">
+            Nuestros Paquetes
+          </h1>
+          <div class="row g-4">
+            <!-- Servicio 1 -->
+            <div class="col-md-4">
+              <div class="card h-100 shadow-md card-destino">
+                <img
+                  src="./imagenes/destinos/salidaTailandia.png"
+                  alt="Servicio 2"
+                />
+                <div class="d-flex justify-content-center mb-2">
+                  <a
+                    href="javascript:void(0)"
+                    onclick="cargar('paquetes/tailandia.html')"
+                    class="btn btn-primary btn-lg btn-verMas"
+                    >Ver plan</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Servicio 2 -->
+            <div class="col-md-4">
+              <div class="card h-100 shadow-md card-destino">
+                <img
+                  src="./imagenes/destinos/salidaSanAndres.jpg"
+                  alt="Servicio 2"
+                />
+                <div class="d-flex justify-content-center mb-2">
+                  <a
+                    href="javascript:void(0)"
+                    onclick="cargar('paquetes/sanAndres.html')"
+                    class="btn btn-primary btn-lg btn-verMas"
+                    >Ver plan</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Servicio 3 -->
+            <div class="col-md-4">
+              <div class="card h-100 shadow-md card-destino">
+                <img
+                  src="./imagenes/destinos/salidaJapon.png"
+                  alt="Servicio 2"
+                />
+                <div class="d-flex justify-content-center mb-2">
+                  <a
+                    href="javascript:void(0)"
+                    onclick="cargar('paquetes/japon.html')"
+                    class="btn btn-primary btn-lg btn-verMas"
+                    >Ver plan</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Servicio 4 -->
+            <div class="col-md-4">
+              <div class="card h-100 shadow-md card-destino">
+                <img
+                  src="./imagenes/destinos/salidaEuropa.png"
+                  alt="Servicio 2"
+                />
+                <div class="d-flex justify-content-center mb-2">
+                  <a
+                    href="javascript:void(0)"
+                    onclick="cargar('paquetes/europa.html')"
+                    class="btn btn-primary btn-lg btn-verMas"
+                    >Ver plan</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Servicio 5 -->
+            <div class="col-md-4">
+              <div class="card h-100 shadow-md card-destino">
+                <img
+                  src="./imagenes/destinos/salidaGrecia.png"
+                  alt="Servicio 2"
+                />
+                <div class="d-flex justify-content-center mb-2">
+                  <a
+                    href="javascript:void(0)"
+                    onclick="cargar('paquetes/europa.html')"
+                    class="btn btn-primary btn-lg btn-verMas"
+                    >Ver plan</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Servicio 6 -->
+            <div class="col-md-4">
+              <div class="card h-100 shadow-md card-destino">
+                <img
+                  src="./imagenes/destinos/salidaChina.png"
+                  alt="Servicio 2"
+                />
+                <div class="d-flex justify-content-center mb-2">
+                  <a
+                    href="javascript:void(0)"
+                    onclick="cargar('paquetes/china.html')"
+                    class="btn btn-primary btn-lg btn-verMas"
+                    >Ver plan</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Formulario-->
+      <div class="col-md-4">
+        <div class="card bg-transparent border-0">
+          <div class="card fondo-azul text-center p-4 border-0 shadow-sm">
+            <h3 class="text-white m-0" style="font-weight: 700">Contáctanos</h3>
+          </div>
+          <div class="card fondo-blanco p-5 shadow-sm">
+            <form id="form" action="../page/contacto.php" method="POST">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control p-3 mb-3"
+                  placeholder="Nombre y apellido"
+                  name="name"
+                  required="required"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control p-3 mb-3"
+                  placeholder="Número de teléfono"
+                  name="phone"
+                  required="required"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control py-3 mb-3"
+                  placeholder="Correo electrónico"
+                  name="email"
+                  required="required"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control p-3 mb-3"
+                  placeholder="Destino"
+                  name="destination"
+                  required="required"
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  name="mensaje"
+                  placeholder="Describe tu consulta"
+                  rows="3"
+                ></textarea>
+              </div>
+              <br />
+              <div class="form-group form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="dataConsent"
+                  required
+                />
+                <label class="form-check-label" for="dataConsent">
+                  Autorizo el tratamiento de mis datos personales según la
+                  <a
+                    href="javascript:void(0)"
+                    onclick="cargar('page/politicas.html')"
+                    class="azul"
+                    >Politica de privacidad</a
+                  >.
+                </label>
+              </div>
+              <input type="text" name="trap" id="trap" style="display: none" />
+              <div>
+                <input
+                  class="btn btn-ubicacion"
+                  type="submit"
+                  id="button"
+                  value="Cotizar"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>

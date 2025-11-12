@@ -495,3 +495,25 @@ video {
   color: #000;
   font-weight: 700;
 }
+
+.breadcrumb {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  text-align: left;
+  color: #555;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.2s ease;
+}
+
+.breadcrumb a:hover {
+  color: #00b5e2; /* color de tu marca */
+}
+
+.breadcrumb span {
+  color: #999; /* color del separador */
+  margin: 0 6px;
+}

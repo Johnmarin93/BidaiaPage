@@ -57,7 +57,8 @@
 
 /* Iconos */
 .icono {
-  max-height: 90px;
+  width: 90px;
+  height: 90px;
 }
 
 /* Imagen de Nosotros */

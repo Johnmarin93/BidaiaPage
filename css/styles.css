@@ -1,8 +1,27 @@
+@font-face {
+  font-family: "FontAwesomeBrands";
+  src: url("/fonts/fa-brands-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FontAwesomeSolid";
+  src: url("/fonts/fa-solid-900.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BootstrapIcons";
+  src: url("/fonts/bootstrap-icons.woff2") format("woff2");
+  font-display: swap;
+}
+
 /* NAVBAR */
 .navbar-principal {
-  background-color: transparent; /* transparente al inicio */
-  transition: background-color 0.4s ease, padding 0.4s ease;
   padding: 15px 0;
+  min-height: 90px; /* ALTURA FIJA PARA EVITAR CLS */
+  background-color: transparent;
+  transition: background-color 0.4s ease, padding 0.4s ease;
 }
 
 /* Navbar al hacer scroll */
@@ -14,7 +33,7 @@
 
 /* Logo al hacer scroll (se hace más pequeña) */
 .navbar-principal.scroll .logo {
-  max-height: 50px;
+  height: 50px; /* Se encoge pero no causa CLS porque ya está reservado */
 }
 
 @media (max-width: 991px) {
@@ -24,12 +43,9 @@
 }
 
 @media (max-width: 991px) {
-  /* Fondo del menú desplegado */
-  .navbar-principal .navbar-collapse.show {
-    background-color: #01b6e3;
-    border-radius: 0 0 0 0;
-    padding: 10px;
-    margin-right: 10px;
+  .navbar-principal {
+    padding: 12px 0;
+    min-height: 75px;
   }
 }
 
@@ -43,16 +59,17 @@
   text-align: center;
 }
 
-.navbar-principal .collapsing,
-.navbar-principal .collapse.show {
+.navbar-principal .collapse.show,
+.navbar-principal .collapsing {
   background-color: #01b6e3b2 !important;
-  border-radius: 10px 10px 10px 10px;
-  transition: none; /* quita la animación del color */
+  border-radius: 10px;
+  padding: 10px 15px;
 }
 /* Logo */
 .logo {
-  max-height: 70px;
-  transition: max-height 0.3s ease;
+  height: 70px; /* ALTURA REAL */
+  width: auto;
+  transition: height 0.3s ease;
 }
 
 /* Iconos */
@@ -517,4 +534,19 @@ video {
 .breadcrumb span {
   color: #999; /* color del separador */
   margin: 0 6px;
+}
+
+#contenido {
+  min-height: 600px; /* Ajusta según el promedio de tus páginas */
+}
+
+#comentarios-clientes {
+  min-height: 500px;
+}
+
+.icono-red i {
+  font-size: 26px;
+  width: 26px;
+  height: 26px;
+  display: inline-block;
 }

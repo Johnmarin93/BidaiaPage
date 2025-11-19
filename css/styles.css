@@ -1,21 +1,39 @@
+/* Font Awesome Brands */
 @font-face {
-  font-family: "FontAwesomeBrands";
+  font-family: "Font Awesome 6 Brands";
   src: url("/fonts/fa-brands-400.woff2") format("woff2");
   font-display: swap;
 }
 
+/* Font Awesome Solid */
 @font-face {
-  font-family: "FontAwesomeSolid";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
   src: url("/fonts/fa-solid-900.woff2") format("woff2");
   font-display: swap;
 }
 
+/* Bootstrap Icons */
 @font-face {
-  font-family: "BootstrapIcons";
+  font-family: "bootstrap-icons";
   src: url("/fonts/bootstrap-icons.woff2") format("woff2");
   font-display: swap;
 }
 
+.fa-solid,
+.fas {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+
+.fa-brands,
+.fab {
+  font-family: "Font Awesome 6 Brands";
+}
+
+.bi {
+  font-family: "bootstrap-icons";
+}
 /* NAVBAR */
 .navbar-principal {
   padding: 15px 0;
@@ -67,8 +85,6 @@
 }
 /* Logo */
 .logo {
-  height: 70px; /* ALTURA REAL */
-  width: auto;
   transition: height 0.3s ease;
 }
 
@@ -540,13 +556,14 @@ video {
   min-height: 600px; /* Ajusta según el promedio de tus páginas */
 }
 
-#comentarios-clientes {
-  min-height: 500px;
-}
-
 .icono-red i {
   font-size: 26px;
   width: 26px;
   height: 26px;
   display: inline-block;
+}
+
+.elfsight-app-2bfaaa75-788f-4408-85a3-2e6fae2ebc40 {
+  min-height: 450px; /* Ajusta según tu diseño */
+  display: block;
 }

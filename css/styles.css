@@ -1,0 +1,571 @@
+/* Font Awesome Brands */
+@font-face {
+  font-family: "Font Awesome 6 Brands";
+  src: url("/fonts/fa-brands-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+/* Font Awesome Solid */
+@font-face {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  src: url("/fonts/fa-solid-900.woff2") format("woff2");
+  font-display: swap;
+}
+
+/* Bootstrap Icons */
+@font-face {
+  font-family: "bootstrap-icons";
+  src: url("/fonts/bootstrap-icons.woff2") format("woff2");
+  font-display: swap;
+}
+
+.fa-solid,
+.fas {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+
+.fa-brands,
+.fab {
+  font-family: "Font Awesome 6 Brands";
+}
+
+.bi {
+  font-family: "bootstrap-icons";
+}
+/* NAVBAR */
+.navbar-principal {
+  padding: 15px 0;
+  min-height: 90px; /* ALTURA FIJA PARA EVITAR CLS */
+  background-color: transparent;
+  transition: background-color 0.4s ease, padding 0.4s ease;
+}
+
+/* Navbar al hacer scroll */
+.navbar-principal.scroll {
+  background-color: #01b6e3be;
+  backdrop-filter: blur(6px);
+  padding: 8px 0; /* se hace más delgada */
+}
+
+/* Logo al hacer scroll (se hace más pequeña) */
+.navbar-principal.scroll .logo {
+  height: 60px; /* Se encoge pero no causa CLS porque ya está reservado */
+}
+
+@media (max-width: 991px) {
+  .navbar-principal {
+    transition: none !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-principal {
+    padding: 12px 0;
+    min-height: 75px;
+  }
+}
+
+.navbar-toggler-icon {
+  filter: invert(1); /* para que el ícono se vea blanco sobre el fondo azul */
+}
+
+/* Links del menú */
+.navbar-principal .nav-link {
+  color: white !important;
+  text-align: center;
+}
+
+.navbar-principal .collapse.show,
+.navbar-principal .collapsing {
+  background-color: #01b6e3b2 !important;
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+/* Logo */
+.logo {
+  width: 180px;
+  height: 80px;
+  transition: height 0.3s ease;
+}
+
+/* Iconos */
+.icono {
+  width: 90px;
+  height: 90px;
+}
+
+/* Imagen de Nosotros */
+.nosotros {
+  max-height: 300px;
+  max-width: 100%;
+  border-radius: 10px;
+}
+/* Imagen de ubicacion */
+.ubicacion {
+  max-width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 5px;
+  max-height: 100%;
+}
+
+/* Hover */
+.navbar-principal .nav-link:hover {
+  color: #f2910f !important;
+}
+.navbar-principal .nav-link {
+  display: inline-block; /* el enlace solo ocupa el ancho del texto */
+  padding-bottom: 2px; /* mantiene espacio para el borde */
+}
+
+/* Hover con subrayado */
+.navbar-principal .nav-link:hover {
+  color: #f2910f !important;
+}
+
+/* Link activo */
+.navbar-principal .nav-link.active {
+  color: #ffffff !important;
+  border-bottom: 2px solid #f2910f;
+}
+
+/* Cuando hace scroll (fondo blanco → links oscuros) */
+.navbar-principal.scroll .nav-link {
+  color: #ffffff !important;
+}
+
+/* Hover con subrayado al hacer scroll */
+.navbar-principal.scroll .nav-link:hover {
+  color: #f2910f !important;
+}
+
+/* Link activo al hacer scroll */
+.navbar-principal.scroll .nav-link.active {
+  color: #ffffff !important;
+  border-bottom: 2px solid #f2910f;
+}
+/* Ícono hamburguesa blanco */
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/* Quitar borde o color al hacer focus */
+.navbar-toggler:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+body {
+  padding-top: 0;
+}
+
+.titulos {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #080808c9;
+}
+
+.parrafo {
+  text-align: justify;
+  line-height: 1.4;
+  margin-bottom: 0.3rem;
+  color: #858585;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.footer {
+  background-color: #01b6e3;
+  color: #fff;
+  text-align: center;
+}
+
+.icono-red {
+  align-items: center;
+  justify-content: center;
+  width: 50px; /* ancho del cuadro */
+  height: 50px; /* alto del cuadro */
+  border: 2px solid white; /* contorno blanco */
+  border-radius: 12px; /* esquinas redondeadas (puedes poner 50% si quieres círculo) */
+  color: white; /* color del ícono */
+  font-size: 28px; /* tamaño del ícono */
+  transition: all 0.3s ease; /* animación suave */
+}
+
+.btn-verMas {
+  background-color: #f2910f !important;
+  border: none !important;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 40px;
+  padding: 10px 20px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.btn-reservar {
+  background-color: #f2910f !important;
+  border: none !important;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 15px 40px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.btn-whatsapp {
+  background-color: #0ab942 !important;
+  border: none !important;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 8px 20px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.btn-whatsapp:hover {
+  background-color: #0cdc4c !important;
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgb(2, 110, 78);
+}
+
+.btn-destinos {
+  background-color: #f2910f !important;
+  border: none !important;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 8px 20px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.btn-destinos:hover {
+  background-color: #f2910f !important;
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgb(242, 145, 0);
+}
+
+.btn-ubicacion {
+  background-color: #f2910f !important;
+  color: white;
+  border: none !important;
+  border-radius: 10px;
+  margin-top: 15px;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 5px 20px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.btn-ubicacion:hover {
+  background-color: #f2910f !important;
+  color: white;
+  font-weight: 700;
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgb(242, 145, 0);
+}
+.btn-reservar:hover {
+  background-color: #f2910f !important;
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgb(242, 145, 0);
+}
+
+.btn-verMas:hover {
+  background-color: #f2910f !important;
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgb(242, 145, 0);
+}
+
+.marca {
+  color: #01b6e3;
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-destino {
+  border: 2px solid transparent !important;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-destino:hover {
+  border: 2px solid #6c6d6d3d !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  transform: translateY(-9px);
+}
+
+.card-titulo {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+  color: #01b6e3;
+  margin-bottom: 10px;
+}
+
+.seccion-cotizar {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../imagenes/nosotros/price.jpg), no-repeat center center;
+  background-size: cover;
+}
+
+.fondo-azul {
+  background-color: #01b6e3;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.fondo-blanco {
+  background-color: #ffffff;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.naranja {
+  color: #f2910f;
+}
+
+.azul {
+  color: #01b6e3;
+}
+
+.icons {
+  max-height: 200px;
+}
+
+.sectionDestino {
+  display: flex;
+  width: 100%;
+  height: 200px;
+}
+
+.sectionDestino img {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 0.5s ease;
+}
+
+.sectionDestino img:hover {
+  width: 200px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+/* Mantienes tu estilo */
+.cardDestino {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#form input:focus,
+#form textarea:focus,
+#form select:focus {
+  border-color: #00b5e2; /* color del borde cuando se hace clic */
+  box-shadow: 0 0 5px #00b5e2; /* sombra alrededor */
+  outline: none; /* quita el borde azul predeterminado */
+  transition: 0.2s ease-in-out;
+}
+
+.back-to-top {
+  opacity: 0; /* 🔹 Invisible al inicio */
+  visibility: hidden; /* 🔹 No clickeable al inicio */
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  background: #01b6e3;
+  color: white;
+  font-size: 22px;
+  padding: 12px 16px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.3s ease;
+  transform: translateY(20px); /* animación de subida */
+}
+
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  background: #019cc4;
+  transform: translateY(-3px);
+}
+
+.float-wa {
+  position: fixed;
+  top: bottom;
+  left: 35px;
+  width: 55px;
+  height: 55px;
+  line-height: 47px;
+  bottom: 30px;
+  right: 30px;
+  background-color: #0df053;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0px 1px 10px rgb(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+.float-wa:hover {
+  text-decoration: none;
+  color: #0cdc4c;
+  background: #c8f3d5;
+}
+
+.popup {
+  display: none; /* Oculto por defecto */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+  color: #888;
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
+.close:hover {
+  color: #000;
+}
+
+.card-precio {
+  display: flex;
+  align-items: stretch;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+  width: fit-content;
+}
+
+/* Lado izquierdo */
+.card-precio .dias {
+  background-color: #f2910f;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+  white-space: nowrap;
+}
+
+/* Lado derecho */
+.card-precio .precio {
+  background-color: #fff;
+  padding: 0.75rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Texto "Desde" */
+.card-precio small {
+  color: #000000;
+  font-size: 0.85rem;
+}
+
+/* Precio */
+.card-precio span {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #01b6e3;
+}
+
+/* Contenedor del precio y USD */
+.card-precio .valor {
+  display: flex;
+  align-items: baseline; /* Alinea el texto del USD con la parte baja del número */
+  justify-content: center;
+  gap: 0.25rem; /* Pequeño espacio entre el precio y USD */
+}
+
+/* USD más pequeño y oscuro */
+.card-precio .valor small {
+  font-size: 0.75rem;
+  color: #000;
+  font-weight: 700;
+}
+
+.breadcrumb {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  text-align: left;
+  color: #555;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.2s ease;
+}
+
+.breadcrumb a:hover {
+  color: #00b5e2; /* color de tu marca */
+}
+
+.breadcrumb span {
+  color: #999; /* color del separador */
+  margin: 0 6px;
+}
+
+#contenido {
+  min-height: 600px; /* Ajusta según el promedio de tus páginas */
+}
+
+.icono-red i {
+  font-size: 26px;
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+}
+
+.elfsight-app-2bfaaa75-788f-4408-85a3-2e6fae2ebc40 {
+  min-height: 450px; /* Ajusta según tu diseño */
+  display: block;
+}

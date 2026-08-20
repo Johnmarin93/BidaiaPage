@@ -1,225 +1,517 @@
-<header
-  class="bg-dark text-white text-center position-relative"
-  style="height: 15vh"
->
-  <video
-    autoplay
-    muted
-    loop
-    playsinline
-    class="w-100 h-100 object-fit-cover position-absolute top-0 start-0"
-    style="z-index: 1; opacity: 0.7"
-  >
-    <source src="/videos/nosotros.mp4" type="video/mp4" />
-    Tu navegador no soporta el video.
-  </video>
-</header>
-<section class="bg-light" style="margin-bottom: 0">
-  <div class="container py-5">
-    <h1 class="text-center">Tratamiento de Datos Personales</h1>
-    
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bidaia</title>
+    <meta
+      name="description"
+      content="Bidaia es una agencia de viajes en Pereira especializada en vuelos, hoteles y paquetes turísticos nacionales e internacionales. Asesoría personalizada y segura."
+    />
+    <meta
+      name="keywords"
+      content="bidaia, agencia de viajes en Pereira, viajes Pereira, vuelos Pereira, paquetes turísticos Pereira, agencia de turismo Pereira"
+    />
+    <meta name="robots" content="index, follow" />
 
-    <section class="mt-4">
-      <p>
-        <strong>Bidaia Agencia de Viajes</strong>, identificada como responsable
-        del tratamiento de datos personales, en cumplimiento de la
-        <strong>Ley 1581 de 2012</strong>, el
-        <strong>Decreto 1377 de 2013</strong> y demás normas aplicables en
-        materia de protección de datos en Colombia, informa a sus clientes,
-        usuarios, empleados y proveedores la forma en que realiza la
-        recolección, almacenamiento, uso, circulación, transmisión y supresión
-        de los datos personales que se encuentran bajo su custodia.
-      </p>
-    </section>
+    <!-- SEO Local -->
+    <meta name="geo.region" content="CO-RIS" />
+    <meta name="geo.placename" content="Pereira" />
+    <meta name="geo.position" content="4.8133;-75.6961" />
+    <meta name="ICBM" content="4.8133, -75.6961" />
 
-    <section>
-      <h5>1. Responsable del tratamiento</h5>
-      <ul>
-        <li><strong>Razón social:</strong> Bidaia SAS</li>
-        <li>
-          <strong>Correo electrónico:</strong> administrativo@bidaia.com.co
-        </li>
-        <li><strong>Sitio web:</strong> www.bidaia.com.co</li>
-        <li><strong>RNT:</strong> 243706</li>
-        <li><strong>País:</strong> Colombia</li>
-      </ul>
-      <p>
-        Bidaia Agencia de Viajes es responsable de garantizar que el tratamiento
-        de los datos personales se realice de manera segura, confidencial y
-        conforme a las finalidades autorizadas por los titulares.
-      </p>
-    </section>
+    <!-- Bootstrap Icons (no bloquea) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      media="print"
+      onload="this.media = 'all'"
+    />
 
-    <section>
-      <h5>2. Finalidades del tratamiento</h5>
-      <p>
-        Los datos personales recolectados serán utilizados para los siguientes
-        fines:
-      </p>
-      <h6>a. Finalidades principales</h6>
-      <ul>
-        <li>
-          Gestionar cotizaciones, reservas y compras de servicios turísticos.
-        </li>
-        <li>
-          Atender solicitudes, quejas, reclamos o peticiones realizadas por los
-          clientes.
-        </li>
-        <li>
-          Cumplir obligaciones contractuales derivadas de la prestación de
-          servicios turísticos.
-        </li>
-        <li>
-          Comunicar información relevante sobre los servicios contratados,
-          modificaciones o novedades.
-        </li>
-        <li>Realizar procesos de facturación, cobro y pagos.</li>
-        <li>
-          Enviar confirmaciones, vouchers o documentos relacionados con viajes y
-          reservas.
-        </li>
-      </ul>
-      <h6>b. Finalidades secundarias</h6>
-      <ul>
-        <li>
-          Enviar información comercial, promociones y campañas publicitarias
-          (con autorización previa).
-        </li>
-        <li>Evaluar la calidad del servicio prestado.</li>
-        <li>Realizar estudios de mercado y análisis estadístico.</li>
-        <li>
-          Mejorar la experiencia del usuario en el sitio web mediante cookies y
-          herramientas de análisis.
-        </li>
-      </ul>
-    </section>
+    <!-- Bootstrap (no bloquea el render) -->
+    <link
+      rel="preload"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      as="style"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
 
-    <section>
-      <h5>3. Datos personales objeto de tratamiento</h5>
-      <p>
-        Los datos personales que pueden ser tratados por Bidaia incluyen, entre
-        otros:
-      </p>
-      <ul>
-        <li>Nombres y apellidos</li>
-        <li>Documento de identificación</li>
-        <li>Dirección de correo electrónico</li>
-        <li>Número de teléfono o celular</li>
-        <li>País y ciudad de residencia</li>
-        <li>Información de contacto</li>
-        <li>Datos relacionados con solicitudes, cotizaciones y reservas</li>
-      </ul>
-      <p>
-        Bidaia no recopila información sensible (como orientación política,
-        religión, salud o datos biométricos), salvo que sea estrictamente
-        necesario y con autorización expresa del titular.
-      </p>
-    </section>
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      />
+    </noscript>
 
-    <section>
-      <h5>4. Autorización del titular</h5>
-      <p>
-        El titular autoriza de manera expresa a Bidaia Agencia de Viajes a
-        recolectar, almacenar, usar y tratar sus datos personales al enviar
-        información a través de formularios de contacto, cotización o reservas
-        en el sitio web
-        <a style="color: #0dcaf0" href="www.bidaia.com.co">www.bidaia.com.co</a
-        >, o mediante canales como
-        <strong>Correo electrónico, WhatsApp</strong> o
-        <strong>redes sociales</strong>.
-      </p>
-    </section>
+    <!-- Font Awesome (no bloquea) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      media="print"
+      onload="this.media = 'all'"
+    />
 
-    <section>
-      <h5>5. Derechos del titular</h5>
-      <p>
-        De acuerdo con la Ley 1581 de 2012, los titulares de la información
-        tienen los siguientes derechos:
-      </p>
-      <ul>
-        <li>Conocer, actualizar y rectificar sus datos personales</li>
-        <li>Solicitar prueba de la autorización otorgada.</li>
-        <li>Ser informados sobre el uso que se da a sus datos.</li>
-        <li>
-          Presentar quejas ante la
-          <strong>Superintendencia de Industria y Comercio (SIC)</strong> por
-          infracciones a la ley.
-        </li>
-        <li>
-          Revocar la autorización o solicitar la supresión de sus datos cuando
-          no se respeten los principios legales.
-        </li>
-      </ul>
-      <p>
-        Las solicitudes deberán realizarse al correo
-        <a style="color: #0dcaf0" href="administrativo@bidaia.com.co"
-          >administrativo@bidaia.com.co</a
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/webfonts/fa-brands-400.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/webfonts/fa-solid-900.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <!-- Tu CSS -->
+    <link
+      rel="preload"
+      href="/css/styles.css"
+      as="style"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+    <noscript><link rel="stylesheet" href="/css/styles.css" /></noscript>
+
+    <link rel="icon" href="./imagenes/logo.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-principal">
+      <div class="container">
+        <!-- Logo -->
+        <a href="" onclick="cargar('inicio.html')">
+          <img src="/imagenes/logoS.png" alt="Logo" class="logo" />
+        </a>
+
+        <!-- Botón hamburguesa -->
+        <button
+          class="navbar-toggler m-3"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-        con el asunto “Protección de Datos Personales”.
-      </p>
-    </section>
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <section>
-      <h5>6. Medidas de seguridad</h5>
-      <p>
-        Bidaia adopta medidas técnicas, humanas y administrativas para
-        garantizar la seguridad de los datos personales, evitando su pérdida,
-        acceso no autorizado, alteración, divulgación o uso indebido. Entre
-        ellas se incluyen:
-      </p>
-      <ul>
-        <li>
-          Restricción del acceso a la información solo al personal autorizado
-        </li>
-        <li>
-          Procedimientos de eliminación segura de datos cuando dejan de ser
-          necesarios
-        </li>
-      </ul>
-    </section>
+        <!-- Enlaces -->
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-2">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://reservas.bidaia.com.co"
+                >Reserva ahora</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-    <section>
-      <h5>7. Transmisión y transferencia de datos</h5>
-      <p>
-        Los datos personales podrán ser transmitidos o compartidos con terceros
-        aliados o proveedores <strong>únicamente</strong> cuando sea necesario
-        para la prestación del servicio (por ejemplo, aerolíneas, hoteles,
-        aseguradoras o empresas de transporte).
-        <strong>Bidaia</strong> garantiza que dichos terceros cumplan con
-        estándares adecuados de protección de datos personales.
-      </p>
-    </section>
+    <header
+      class="bg-dark text-white text-center position-relative"
+      style="height: 15vh"
+    >
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        class="w-100 h-100 object-fit-cover position-absolute top-0 start-0"
+        style="z-index: 1; opacity: 0.7"
+      >
+        <source src="/videos/nosotros.mp4" type="video/mp4" />
+        Tu navegador no soporta el video.
+      </video>
+    </header>
 
-    <section>
-      <h5>8. Conservación de la información</h5>
-      <p>
-        Los datos personales serán conservados por el tiempo necesario para
-        cumplir con las finalidades establecidas o mientras exista una relación
-        comercial, contractual o legal con el titular.
-      </p>
-    </section>
+    <section class="bg-light" style="margin-bottom: 0">
+      <div class="container py-5">
+        <h1 class="text-center">Tratamiento de Datos Personales</h1>
 
-    <section>
-      <h5>9. Procedimiento para ejercer derechos</h5>
-      <p>
-        El titular podrá presentar solicitudes, quejas o reclamos sobre el
-        tratamiento de sus datos personales mediante correo electrónico a
-        <strong>administrativo@bidaia.com.co.</strong> Bidaia responderá dichas
-        solicitudes dentro de los <strong>15 días hábiles</strong> siguientes a
-        su recepción, conforme a lo dispuesto por la normatividad vigente.
-      </p>
-    </section>
+        <section class="mt-4">
+          <p>
+            <strong>Bidaia Agencia de Viajes</strong>, identificada como
+            responsable del tratamiento de datos personales, en cumplimiento de
+            la <strong>Ley 1581 de 2012</strong>, el
+            <strong>Decreto 1377 de 2013</strong> y demás normas aplicables en
+            materia de protección de datos en Colombia, informa a sus clientes,
+            usuarios, empleados y proveedores la forma en que realiza la
+            recolección, almacenamiento, uso, circulación, transmisión y
+            supresión de los datos personales que se encuentran bajo su
+            custodia.
+          </p>
+        </section>
 
-    <section>
-      <h5>10. Vigencia y actualizaciones</h5>
-      <p>
-        La presente política entra en vigencia a partir de su publicación en el
-        sitio web
-        <a style="color: #0dcaf0" href="www.bidaia.com.co">www.bidaia.com.co</a>
-        y estará vigente mientras Bidaia realice tratamiento de datos
-        personales. Cualquier modificación será publicada oportunamente en el
-        sitio web.
-      </p>
+        <section>
+          <h5>1. Responsable del tratamiento</h5>
+          <ul>
+            <li><strong>Razón social:</strong> Bidaia SAS</li>
+            <li>
+              <strong>Correo electrónico:</strong> administrativo@bidaia.com.co
+            </li>
+            <li><strong>Sitio web:</strong> www.bidaia.com.co</li>
+            <li><strong>RNT:</strong> 243706</li>
+            <li><strong>País:</strong> Colombia</li>
+          </ul>
+          <p>
+            Bidaia Agencia de Viajes es responsable de garantizar que el
+            tratamiento de los datos personales se realice de manera segura,
+            confidencial y conforme a las finalidades autorizadas por los
+            titulares.
+          </p>
+        </section>
+
+        <section>
+          <h5>2. Finalidades del tratamiento</h5>
+          <p>
+            Los datos personales recolectados serán utilizados para los
+            siguientes fines:
+          </p>
+          <h6>a. Finalidades principales</h6>
+          <ul>
+            <li>
+              Gestionar cotizaciones, reservas y compras de servicios
+              turísticos.
+            </li>
+            <li>
+              Atender solicitudes, quejas, reclamos o peticiones realizadas por
+              los clientes.
+            </li>
+            <li>
+              Cumplir obligaciones contractuales derivadas de la prestación de
+              servicios turísticos.
+            </li>
+            <li>
+              Comunicar información relevante sobre los servicios contratados,
+              modificaciones o novedades.
+            </li>
+            <li>Realizar procesos de facturación, cobro y pagos.</li>
+            <li>
+              Enviar confirmaciones, vouchers o documentos relacionados con
+              viajes y reservas.
+            </li>
+          </ul>
+          <h6>b. Finalidades secundarias</h6>
+          <ul>
+            <li>
+              Enviar información comercial, promociones y campañas publicitarias
+              (con autorización previa).
+            </li>
+            <li>Evaluar la calidad del servicio prestado.</li>
+            <li>Realizar estudios de mercado y análisis estadístico.</li>
+            <li>
+              Mejorar la experiencia del usuario en el sitio web mediante
+              cookies y herramientas de análisis.
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h5>3. Datos personales objeto de tratamiento</h5>
+          <p>
+            Los datos personales que pueden ser tratados por Bidaia incluyen,
+            entre otros:
+          </p>
+          <ul>
+            <li>Nombres y apellidos</li>
+            <li>Documento de identificación</li>
+            <li>Dirección de correo electrónico</li>
+            <li>Número de teléfono o celular</li>
+            <li>País y ciudad de residencia</li>
+            <li>Información de contacto</li>
+            <li>Datos relacionados con solicitudes, cotizaciones y reservas</li>
+          </ul>
+          <p>
+            Bidaia no recopila información sensible (como orientación política,
+            religión, salud o datos biométricos), salvo que sea estrictamente
+            necesario y con autorización expresa del titular.
+          </p>
+        </section>
+
+        <section>
+          <h5>4. Autorización del titular</h5>
+          <p>
+            El titular autoriza de manera expresa a Bidaia Agencia de Viajes a
+            recolectar, almacenar, usar y tratar sus datos personales al enviar
+            información a través de formularios de contacto, cotización o
+            reservas en el sitio web
+            <a style="color: #0dcaf0" href="www.bidaia.com.co"
+              >www.bidaia.com.co</a
+            >, o mediante canales como
+            <strong>Correo electrónico, WhatsApp</strong> o
+            <strong>redes sociales</strong>.
+          </p>
+        </section>
+
+        <section>
+          <h5>5. Derechos del titular</h5>
+          <p>
+            De acuerdo con la Ley 1581 de 2012, los titulares de la información
+            tienen los siguientes derechos:
+          </p>
+          <ul>
+            <li>Conocer, actualizar y rectificar sus datos personales</li>
+            <li>Solicitar prueba de la autorización otorgada.</li>
+            <li>Ser informados sobre el uso que se da a sus datos.</li>
+            <li>
+              Presentar quejas ante la
+              <strong>Superintendencia de Industria y Comercio (SIC)</strong>
+              por infracciones a la ley.
+            </li>
+            <li>
+              Revocar la autorización o solicitar la supresión de sus datos
+              cuando no se respeten los principios legales.
+            </li>
+          </ul>
+          <p>
+            Las solicitudes deberán realizarse al correo
+            <a style="color: #0dcaf0" href="administrativo@bidaia.com.co"
+              >administrativo@bidaia.com.co</a
+            >
+            con el asunto “Protección de Datos Personales”.
+          </p>
+        </section>
+
+        <section>
+          <h5>6. Medidas de seguridad</h5>
+          <p>
+            Bidaia adopta medidas técnicas, humanas y administrativas para
+            garantizar la seguridad de los datos personales, evitando su
+            pérdida, acceso no autorizado, alteración, divulgación o uso
+            indebido. Entre ellas se incluyen:
+          </p>
+          <ul>
+            <li>
+              Restricción del acceso a la información solo al personal
+              autorizado
+            </li>
+            <li>
+              Procedimientos de eliminación segura de datos cuando dejan de ser
+              necesarios
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h5>7. Transmisión y transferencia de datos</h5>
+          <p>
+            Los datos personales podrán ser transmitidos o compartidos con
+            terceros aliados o proveedores <strong>únicamente</strong> cuando
+            sea necesario para la prestación del servicio (por ejemplo,
+            aerolíneas, hoteles, aseguradoras o empresas de transporte).
+            <strong>Bidaia</strong> garantiza que dichos terceros cumplan con
+            estándares adecuados de protección de datos personales.
+          </p>
+        </section>
+
+        <section>
+          <h5>8. Conservación de la información</h5>
+          <p>
+            Los datos personales serán conservados por el tiempo necesario para
+            cumplir con las finalidades establecidas o mientras exista una
+            relación comercial, contractual o legal con el titular.
+          </p>
+        </section>
+
+        <section>
+          <h5>9. Procedimiento para ejercer derechos</h5>
+          <p>
+            El titular podrá presentar solicitudes, quejas o reclamos sobre el
+            tratamiento de sus datos personales mediante correo electrónico a
+            <strong>administrativo@bidaia.com.co.</strong> Bidaia responderá
+            dichas solicitudes dentro de los
+            <strong>15 días hábiles</strong> siguientes a su recepción, conforme
+            a lo dispuesto por la normatividad vigente.
+          </p>
+        </section>
+
+        <section>
+          <h5>10. Vigencia y actualizaciones</h5>
+          <p>
+            La presente política entra en vigencia a partir de su publicación en
+            el sitio web
+            <a style="color: #0dcaf0" href="www.bidaia.com.co"
+              >www.bidaia.com.co</a
+            >
+            y estará vigente mientras Bidaia realice tratamiento de datos
+            personales. Cualquier modificación será publicada oportunamente en
+            el sitio web.
+          </p>
+        </section>
+      </div>
     </section>
-  </div>
-</section>
+    <footer>
+      <div
+        class="container-fluid text-white-50 py-5 px-sm-3 px-lg-5 footer"
+        id="contact"
+      >
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <p style="text-align: justify; color: #e7f9fc">
+              En Bidaia somos personas responsables, con actitud de servicio y
+              apasionados por lo que hacemos. Trabajamos día a día con respeto,
+              disciplina y lealtad por nuestra empresa. Brindamos a nuestros
+              clientes excelente comunicación, empatía y amabilidad.
+            </p>
+            <h6
+              class="text-white text-uppercase mt-4 mb-3"
+              style="letter-spacing: 5px"
+            >
+              Síguenos en:
+            </h6>
+
+            <!-- Redes sociales -->
+            <div class="d-flex gap-3 justify-content-center">
+              <a
+                href="https://www.instagram.com/bidaia_co/"
+                target="_blank"
+                class="icono-red"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="https://www.tiktok.com/@bidaia.agencia.de"
+                target="_blank"
+                class="icono-red"
+              >
+                <i class="fab fa-tiktok"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-1 col-md-6"></div>
+          <div class="col-lg-4 col-md-6">
+            <h6
+              class="text-white text-uppercase mb-4 mt-2"
+              style="letter-spacing: 5px"
+            >
+              Contáctenos
+            </h6>
+            <p style="color: #e7f9fc; text-align: start">
+              <i class="fa fa-map-marker-alt mr-2 text-white"></i> Cañaveral 2
+              local 17, Pereira, Risaralda, Colombia
+            </p>
+            <p style="color: #e7f9fc; text-align: start">
+              <i class="fa fa-phone-alt mr-2 text-white"></i> +57 3127096446
+            </p>
+            <p style="color: #e7f9fc; text-align: start">
+              <i class="fa fa-envelope mr-2 text-white"></i>
+              reservas@bidaia.com.co
+            </p>
+            <p style="color: #e7f9fc; text-align: start">
+              <i class="fa fa-file mr-2 text-white"></i>
+              RTN: 243706
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6">
+            <h6
+              class="text-white text-uppercase mb-4"
+              style="letter-spacing: 3px"
+            >
+              Medios de Pago
+            </h6>
+            <img
+              src="../imagenes/medios/Bancolombia.png"
+              alt="Bancolombia"
+              width="40"
+              height="40"
+            />
+            <img
+              src="../imagenes/medios/Davivienda.png"
+              alt="Davivienda"
+              width="40"
+              height="40"
+            />
+            <img
+              src="../imagenes/medios/Mastercard.png"
+              alt="Mastercard"
+              width="40"
+              height="40"
+            />
+            <img
+              src="../imagenes/medios/visa.png"
+              alt="Visa"
+              width="40"
+              height="40"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid bg-dark text-white-50 py-3 px-sm-3 px-md-5">
+        <div class="row">
+          <div
+            class="col-lg-4 d-flex justify-content-center align-items-center text-center mb-3 mb-md-0"
+          >
+            <p style="color: #fff; font-size: 14px">
+              &copy; 2024 <strong>Bidaia</strong>. Todos los derechos
+              reservados.
+            </p>
+          </div>
+          <div
+            class="col-lg-4 text-center text-md-center mb-3 mb-md-0"
+            style="font-size: 14px"
+          >
+            <a
+              href="tratamiento.html"
+              style="color: #fff; text-decoration: none"
+              >Tratamiento de Datos</a
+            >
+            |
+            <a href="politicas.html" style="color: #fff; text-decoration: none"
+              >Politica de privacidad</a
+            >
+            |
+            <a href="terminos.html" style="color: #fff; text-decoration: none"
+              >Terminos y condiciones</a
+            >
+          </div>
+          <div
+            class="col-lg-4 d-flex justify-content-center align-items-center text-center mb-3 mb-md-0"
+            style="font-size: 14px"
+          >
+            Diseñado por
+            <a href="#" style="color: #fff; text-decoration: none">
+              &nbsp;John Marin</a
+            >
+          </div>
+          <a
+            href="https://api.whatsapp.com/send?phone=573127096446"
+            class="float-wa"
+            target="_blank"
+          >
+            <i class="bi bi-whatsapp" style="margin-top: 16px"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    <!-- SCRIPTS -->
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    ></script>
+    <script defer src="/js/app.min.js"></script>
+  </body>
+</html>

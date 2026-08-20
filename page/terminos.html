@@ -1,146 +1,434 @@
-<header
-  class="bg-dark text-white text-center position-relative"
-  style="height: 15vh"
->
-  <video
-    autoplay
-    muted
-    loop
-    playsinline
-    class="w-100 h-100 object-fit-cover position-absolute top-0 start-0"
-    style="z-index: 1; opacity: 0.7"
-  >
-    <source src="/videos/nosotros.mp4" type="video/mp4" />
-    Tu navegador no soporta el video.
-  </video>
-</header>
-<section class="bg-light" style="margin-bottom: 0">
-  <div class="container py-5">
-    <h1 class="text-center">Términos y condiciones de uso del sitio WEB</h1>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bidaia</title>
+    <meta
+      name="description"
+      content="Bidaia es una agencia de viajes en Pereira especializada en vuelos, hoteles y paquetes turísticos nacionales e internacionales. Asesoría personalizada y segura."
+    />
+    <meta
+      name="keywords"
+      content="bidaia, agencia de viajes en Pereira, viajes Pereira, vuelos Pereira, paquetes turísticos Pereira, agencia de turismo Pereira"
+    />
+    <meta name="robots" content="index, follow" />
 
-    <section class="mt-4">
-      <p>
-        <strong>Bidaia SAS</strong>, Bienvenido(a) al sitio web
-        <a style="color: #0dcaf0" href="www.bidaia.com.co">www.bidaia.com.co</a
-        >. El uso de este sitio implica la aceptación plena y sin reservas de
-        los siguientes términos y condiciones. Si no está de acuerdo con alguno
-        de ellos, le recomendamos no utilizar este sitio.
-      </p>
-    </section>
+    <!-- SEO Local -->
+    <meta name="geo.region" content="CO-RIS" />
+    <meta name="geo.placename" content="Pereira" />
+    <meta name="geo.position" content="4.8133;-75.6961" />
+    <meta name="ICBM" content="4.8133, -75.6961" />
 
-    <section>
-      <h5>1. Objetivo del sitio Web</h5>
-      <p>
-        El presente sitio tiene como finalidad ofrecer información sobre
-        <strong
-          >servicios turísticos, paquetes de viaje, destinos, reservas y
-          cotizaciones</strong
+    <!-- Bootstrap Icons (no bloquea) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      media="print"
+      onload="this.media = 'all'"
+    />
+
+    <!-- Bootstrap (no bloquea el render) -->
+    <link
+      rel="preload"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      as="style"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      />
+    </noscript>
+
+    <!-- Font Awesome (no bloquea) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      media="print"
+      onload="this.media = 'all'"
+    />
+
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/webfonts/fa-brands-400.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/webfonts/fa-solid-900.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <!-- Tu CSS -->
+    <link
+      rel="preload"
+      href="/css/styles.css"
+      as="style"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+    <noscript><link rel="stylesheet" href="/css/styles.css" /></noscript>
+
+    <link rel="icon" href="./imagenes/logo.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-principal">
+      <div class="container">
+        <!-- Logo -->
+        <a href="" onclick="cargar('inicio.html')">
+          <img src="/imagenes/logoS.png" alt="Logo" class="logo" />
+        </a>
+
+        <!-- Botón hamburguesa -->
+        <button
+          class="navbar-toggler m-3"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-        ofrecidos por <strong>Bidaia SAS</strong>, así como facilitar la
-        comunicación entre los usuarios y la agencia.
-      </p>
-    </section>
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <section>
-      <h5>2. Aceptación de los términos</h5>
-      <p>
-        Al acceder o utilizar este sitio web, el usuario reconoce haber leído,
-        comprendido y aceptado estos Términos y Condiciones. Bidaia podrá
-        modificarlos en cualquier momento y los cambios se publicarán en esta
-        misma página.
-      </p>
-    </section>
+        <!-- Enlaces -->
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-2">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://reservas.bidaia.com.co"
+                >Reserva ahora</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-    <section>
-      <h5>3. Uso adecuado del sitio</h5>
-      <p>El usuario se compromete a:</p>
-      <ul>
-        <li>
-          No utilizar el sitio con fines fraudulentos, ilegales o contrarios a
-          la buena fe.
-        </li>
-        <li>No alterar ni modificar contenidos del sitio.</li>
-        <li>
-          No intentar vulnerar la seguridad del sitio web o de sus servidores.
-        </li>
-      </ul>
-      <p>
-        Bidaia se reserva el derecho de restringir o bloquear el acceso a
-        usuarios que incumplan estas condiciones.
-      </p>
-    </section>
+    <header
+      class="bg-dark text-white text-center position-relative"
+      style="height: 15vh"
+    >
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        class="w-100 h-100 object-fit-cover position-absolute top-0 start-0"
+        style="z-index: 1; opacity: 0.7"
+      >
+        <source src="/videos/nosotros.mp4" type="video/mp4" />
+        Tu navegador no soporta el video.
+      </video>
+    </header>
+    <section class="bg-light" style="margin-bottom: 0">
+      <div class="container py-5">
+        <h1 class="text-center">Términos y condiciones de uso del sitio WEB</h1>
 
-    <section>
-      <h5>4. Propiedad intelectual</h5>
-      <p>
-        Todo el contenido del sitio (textos, imágenes, logotipos, videos,
-        marcas, diseños, etc.) es propiedad de <strong>Bidaia SAS</strong> o de
-        sus aliados, y está protegido por las leyes de propiedad intelectual.
-        Queda prohibida su reproducción total o parcial sin autorización
-        expresa.
-      </p>
-    </section>
+        <section class="mt-4">
+          <p>
+            <strong>Bidaia SAS</strong>, Bienvenido(a) al sitio web
+            <a style="color: #0dcaf0" href="www.bidaia.com.co"
+              >www.bidaia.com.co</a
+            >. El uso de este sitio implica la aceptación plena y sin reservas
+            de los siguientes términos y condiciones. Si no está de acuerdo con
+            alguno de ellos, le recomendamos no utilizar este sitio.
+          </p>
+        </section>
 
-    <section>
-      <h5>5. Información de los servicios</h5>
-      <p>
-        La información publicada sobre paquetes, precios, destinos o promociones
-        puede variar sin previo aviso. Bidaia realiza esfuerzos para mantener la
-        información actualizada, pero <strong>no garantiza</strong> que esté
-        libre de errores o cambios externos (por ejemplo, políticas de
-        aerolíneas o hoteles).
-      </p>
-    </section>
+        <section>
+          <h5>1. Objetivo del sitio Web</h5>
+          <p>
+            El presente sitio tiene como finalidad ofrecer información sobre
+            <strong
+              >servicios turísticos, paquetes de viaje, destinos, reservas y
+              cotizaciones</strong
+            >
+            ofrecidos por <strong>Bidaia SAS</strong>, así como facilitar la
+            comunicación entre los usuarios y la agencia.
+          </p>
+        </section>
 
-    <section>
-      <h5>6. Enlaces a sitios de terceros</h5>
-      <p>
-        El sitio puede contener enlaces hacia otras páginas o plataformas (por
-        ejemplo, WhatsApp o redes sociales). Bidaia no se responsabiliza del
-        contenido, políticas o prácticas de dichos sitios externos.
-      </p>
-    </section>
+        <section>
+          <h5>2. Aceptación de los términos</h5>
+          <p>
+            Al acceder o utilizar este sitio web, el usuario reconoce haber
+            leído, comprendido y aceptado estos Términos y Condiciones. Bidaia
+            podrá modificarlos en cualquier momento y los cambios se publicarán
+            en esta misma página.
+          </p>
+        </section>
 
-    <section>
-      <h5>7. Responsabilidad</h5>
-      <p>Bidaia no se hace responsable por:</p>
-      <ul>
-        <li>Fallas técnicas, interrupciones o virus en el sitio web.</li>
-        <li>Daños derivados del uso o imposibilidad de uso del sitio.</li>
-        <li>
-          Errores en la información proporcionada por terceros proveedores de
-          servicios turísticos.
-        </li>
-      </ul>
-      <p>El usuario utiliza el sitio bajo su propia responsabilidad.</p>
-    </section>
+        <section>
+          <h5>3. Uso adecuado del sitio</h5>
+          <p>El usuario se compromete a:</p>
+          <ul>
+            <li>
+              No utilizar el sitio con fines fraudulentos, ilegales o contrarios
+              a la buena fe.
+            </li>
+            <li>No alterar ni modificar contenidos del sitio.</li>
+            <li>
+              No intentar vulnerar la seguridad del sitio web o de sus
+              servidores.
+            </li>
+          </ul>
+          <p>
+            Bidaia se reserva el derecho de restringir o bloquear el acceso a
+            usuarios que incumplan estas condiciones.
+          </p>
+        </section>
 
-    <section>
-      <h5>8. Protección de datos personales</h5>
-      <p>
-        El tratamiento de los datos personales de los usuarios se realiza
-        conforme a la <strong>Política de Privacidad</strong> y la
-        <strong>Política de Tratamiento de Datos Personales</strong>,
-        disponibles en este mismo sitio web.
-      </p>
-    </section>
+        <section>
+          <h5>4. Propiedad intelectual</h5>
+          <p>
+            Todo el contenido del sitio (textos, imágenes, logotipos, videos,
+            marcas, diseños, etc.) es propiedad de <strong>Bidaia SAS</strong> o
+            de sus aliados, y está protegido por las leyes de propiedad
+            intelectual. Queda prohibida su reproducción total o parcial sin
+            autorización expresa.
+          </p>
+        </section>
 
-    <section>
-      <h5>9. Contacto</h5>
-      <p>
-        Para cualquier duda o solicitud relacionada con estos términos, puede
-        escribirnos a: 📧 administrativo@bidaia.com.co 🌐 www.bidaia.com.co
-      </p>
-    </section>
+        <section>
+          <h5>5. Información de los servicios</h5>
+          <p>
+            La información publicada sobre paquetes, precios, destinos o
+            promociones puede variar sin previo aviso. Bidaia realiza esfuerzos
+            para mantener la información actualizada, pero
+            <strong>no garantiza</strong> que esté libre de errores o cambios
+            externos (por ejemplo, políticas de aerolíneas o hoteles).
+          </p>
+        </section>
 
-    <section>
-      <h5>10. Ley aplicable</h5>
-      <p>
-        Estos términos se rigen por las leyes de la
-        <strong>República de Colombia.</strong>
-        Cualquier controversia será resuelta ante la jurisdicción de los
-        tribunales colombianos.
-      </p>
+        <section>
+          <h5>6. Enlaces a sitios de terceros</h5>
+          <p>
+            El sitio puede contener enlaces hacia otras páginas o plataformas
+            (por ejemplo, WhatsApp o redes sociales). Bidaia no se
+            responsabiliza del contenido, políticas o prácticas de dichos sitios
+            externos.
+          </p>
+        </section>
+
+        <section>
+          <h5>7. Responsabilidad</h5>
+          <p>Bidaia no se hace responsable por:</p>
+          <ul>
+            <li>Fallas técnicas, interrupciones o virus en el sitio web.</li>
+            <li>Daños derivados del uso o imposibilidad de uso del sitio.</li>
+            <li>
+              Errores en la información proporcionada por terceros proveedores
+              de servicios turísticos.
+            </li>
+          </ul>
+          <p>El usuario utiliza el sitio bajo su propia responsabilidad.</p>
+        </section>
+
+        <section>
+          <h5>8. Protección de datos personales</h5>
+          <p>
+            El tratamiento de los datos personales de los usuarios se realiza
+            conforme a la <strong>Política de Privacidad</strong> y la
+            <strong>Política de Tratamiento de Datos Personales</strong>,
+            disponibles en este mismo sitio web.
+          </p>
+        </section>
+
+        <section>
+          <h5>9. Contacto</h5>
+          <p>
+            Para cualquier duda o solicitud relacionada con estos términos,
+            puede escribirnos a: 📧 administrativo@bidaia.com.co 🌐
+            www.bidaia.com.co
+          </p>
+        </section>
+
+        <section>
+          <h5>10. Ley aplicable</h5>
+          <p>
+            Estos términos se rigen por las leyes de la
+            <strong>República de Colombia.</strong>
+            Cualquier controversia será resuelta ante la jurisdicción de los
+            tribunales colombianos.
+          </p>
+        </section>
+      </div>
     </section>
-  </div>
-</section>
+    <footer>
+      <div
+        class="container-fluid text-white-50 py-5 px-sm-3 px-lg-5 footer"
+        id="contact"
+      >
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <p style="text-align: justify; color: #e7f9fc">
+              En Bidaia somos personas responsables, con actitud de servicio y
+              apasionados por lo que hacemos. Trabajamos día a día con respeto,
+              disciplina y lealtad por nuestra empresa. Brindamos a nuestros
+              clientes excelente comunicación, empatía y amabilidad.
+            </p>
+            <h6
+              class="text-white text-uppercase mt-4 mb-3"
+              style="letter-spacing: 5px"
+            >
+              Síguenos en:
+            </h6>
+
+            <!-- Redes sociales -->
+            <div class="d-flex gap-3 justify-content-center">
+              <a
+                href="https://www.instagram.com/bidaia_co/"
+                target="_blank"
+                class="icono-red"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="https://www.tiktok.com/@bidaia.agencia.de"
+                target="_blank"
+                class="icono-red"
+              >
+                <i class="fab fa-tiktok"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-1 col-md-6"></div>
+          <div class="col-lg-4 col-md-6">
+            <h6
+              class="text-white text-uppercase mb-4 mt-2"
+              style="letter-spacing: 5px"
+            >
+              Contáctenos
+            </h6>
+            <p style="color: #e7f9fc; text-align: start">
+              <i class="fa fa-map-marker-alt mr-2 text-white"></i> Cañaveral 2
+              local 17, Pereira, Risaralda, Colombia
+            </p>
+            <p style="color: #e7f9fc; text-align: start">
+              <i class="fa fa-phone-alt mr-2 text-white"></i> +57 3127096446
+            </p>
+            <p style="color: #e7f9fc; text-align: start">
+              <i class="fa fa-envelope mr-2 text-white"></i>
+              reservas@bidaia.com.co
+            </p>
+            <p style="color: #e7f9fc; text-align: start">
+              <i class="fa fa-file mr-2 text-white"></i>
+              RTN: 243706
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6">
+            <h6
+              class="text-white text-uppercase mb-4"
+              style="letter-spacing: 3px"
+            >
+              Medios de Pago
+            </h6>
+            <img
+              src="../imagenes/medios/Bancolombia.png"
+              alt="Bancolombia"
+              width="40"
+              height="40"
+            />
+            <img
+              src="../imagenes/medios/Davivienda.png"
+              alt="Davivienda"
+              width="40"
+              height="40"
+            />
+            <img
+              src="../imagenes/medios/Mastercard.png"
+              alt="Mastercard"
+              width="40"
+              height="40"
+            />
+            <img
+              src="../imagenes/medios/visa.png"
+              alt="Visa"
+              width="40"
+              height="40"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid bg-dark text-white-50 py-3 px-sm-3 px-md-5">
+        <div class="row">
+          <div
+            class="col-lg-4 d-flex justify-content-center align-items-center text-center mb-3 mb-md-0"
+          >
+            <p style="color: #fff; font-size: 14px">
+              &copy; 2024 <strong>Bidaia</strong>. Todos los derechos
+              reservados.
+            </p>
+          </div>
+          <div
+            class="col-lg-4 text-center text-md-center mb-3 mb-md-0"
+            style="font-size: 14px"
+          >
+            <a
+              href="tratamiento.html"
+              style="color: #fff; text-decoration: none"
+              >Tratamiento de Datos</a
+            >
+            |
+            <a href="politicas.html" style="color: #fff; text-decoration: none"
+              >Politica de privacidad</a
+            >
+            |
+            <a href="terminos.html" style="color: #fff; text-decoration: none"
+              >Terminos y condiciones</a
+            >
+          </div>
+          <div
+            class="col-lg-4 d-flex justify-content-center align-items-center text-center mb-3 mb-md-0"
+            style="font-size: 14px"
+          >
+            Diseñado por
+            <a href="#" style="color: #fff; text-decoration: none">
+              &nbsp;John Marin</a
+            >
+          </div>
+          <a
+            href="https://api.whatsapp.com/send?phone=573127096446"
+            class="float-wa"
+            target="_blank"
+          >
+            <i class="bi bi-whatsapp" style="margin-top: 16px"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    <!-- SCRIPTS -->
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    ></script>
+    <script defer src="/js/app.min.js"></script>
+  </body>
+</html>
